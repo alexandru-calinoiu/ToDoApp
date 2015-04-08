@@ -14,6 +14,7 @@
 		D3726B251AD519630070B819 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3726B231AD519630070B819 /* LaunchScreen.xib */; };
 		D3726B311AD519630070B819 /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3726B301AD519630070B819 /* ToDoAppTests.swift */; };
 		D3726B3B1AD51C660070B819 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3726B3A1AD51C660070B819 /* ToDoItem.swift */; };
+		D3726B3D1AD5266F0070B819 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3726B3C1AD5266F0070B819 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D3726B2F1AD519630070B819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3726B301AD519630070B819 /* ToDoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppTests.swift; sourceTree = "<group>"; };
 		D3726B3A1AD51C660070B819 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		D3726B3C1AD5266F0070B819 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				D3726B211AD519630070B819 /* Images.xcassets */,
 				D3726B231AD519630070B819 /* LaunchScreen.xib */,
 				D3726B181AD519630070B819 /* Supporting Files */,
+				D3726B3C1AD5266F0070B819 /* TableViewCell.swift */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3726B1D1AD519630070B819 /* ViewController.swift in Sources */,
+				D3726B3D1AD5266F0070B819 /* TableViewCell.swift in Sources */,
 				D3726B1B1AD519630070B819 /* AppDelegate.swift in Sources */,
 				D3726B3B1AD51C660070B819 /* ToDoItem.swift in Sources */,
 			);
