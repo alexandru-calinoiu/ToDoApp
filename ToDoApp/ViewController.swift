@@ -21,6 +21,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate = self
         tableView.registerClass(TableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.separatorStyle = .None
+        tableView.backgroundColor = UIColor.blackColor()
         tableView.rowHeight = 50.0
         
         if toDoItems.count<0{
@@ -48,6 +49,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCellWithIdentifier("cell",
                 forIndexPath: indexPath) as TableViewCell
+            cell.selectionStyle = .None
             cell.textLabel?.backgroundColor = UIColor.clearColor()
             let item = toDoItems[indexPath.row]
             cell.textLabel?.text = item.text

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ibf-PS-ttM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ibf-PS-ttM">
                                 <rect key="frame" x="0.0" y="0.0" width="605" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ibf-PS-ttM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3Aj-bV-D8a"/>
+                            <constraint firstItem="Ibf-PS-ttM" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="8rF-qN-XK0"/>
+                            <constraint firstItem="Ibf-PS-ttM" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="VB8-cm-0br"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ibf-PS-ttM" secondAttribute="trailing" constant="-21" id="pAc-xv-SKo"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Ibf-PS-ttM" id="AFx-Hd-wbq"/>
